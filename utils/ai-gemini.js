@@ -18,6 +18,7 @@ export async function getDreamInterpretation(dreamText) {
 
     const result = await generativeModel.generateContent(`Dream: ${dreamText}`);
     const response = result.response;
+    console.log(response.text().trim())
     return response.text().trim();
   } catch (error) {
     console.error('Gemini API error:', error);
