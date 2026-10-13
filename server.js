@@ -1,24 +1,18 @@
+import { config as dotEnvConfig } from 'dotenv'
+dotEnvConfig();
 import express from 'express';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 import helmet from 'helmet'
 import { initDatabase } from './config/database-init.js';
 import dreamsRouter from './routes/dreams.js';
-import { config as dotEnvConfig } from 'dotenv'
 
-dotEnvConfig();
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 
 const app = express();
-
-/*
-Challenge:
-  1. Push this code to GitHub.
-  hint.md for git command help.
-*/
 
 if (process.env.NODE_ENV === 'production'){
   app.use(helmet());
