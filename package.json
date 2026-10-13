@@ -14,9 +14,10 @@
     "helmet": "^8.1.0",
     "openai": "^4.52.0",
     "sqlite": "^5.1.1",
-    "sqlite3": "^5.1.7"
+    "sqlite3": "^6.0.1",
+     "dotenv": "^18.0.7"
   },
   "devDependencies": {
-    "nodemon": "^3.0.2"
+    "nodemon": "^1.14.10"
   }
 }

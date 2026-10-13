@@ -1,6 +1,6 @@
-import express from 'express';
-import { getDatabase } from '../config/database.js';
-import { getDreamInterpretation } from '../utils/ai-openai.js'; // or '../utils/ai-gemini.js' if using Gemini
+import express from 'express'
+import { getDatabase } from '../config/database.js'
+import { getDreamInterpretation } from '../utils/ai-gemini.js' // '../utils/ai-openai.js' if using Open AI
 import { validateText } from '../utils/validateText.js'
 
 const router = express.Router();
